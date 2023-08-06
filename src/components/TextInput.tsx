@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {
   id: string;
   name: string;
@@ -28,10 +26,10 @@ export default function TextInput({
         placeholder={placeholder}
         value={input}
         onChange={onChangeHandler}
-        className={`w-full h-14 rounded-lg p-6 text-[#3d3b48] border border-semisolid border-[#dedede] font-semibold placeholder:font-bold focus:outline-none focus:border-[#5e54a4] ${
+        className={`w-full h-14 rounded-lg p-6 text-[#3d3b48] border border-semisolid  font-semibold placeholder:font-semibold focus:outline-none focus:border-[#5e54a4] ${
           isError
-            ? "border-[#FF7979] border-2 placeholder:text-[#FF7979] placeholder:font-semibold"
-            : ""
+            ? "border-[#FF7979] border-2 placeholder:text-[#FF7979] "
+            : "border-[#dedede] "
         }`}
       />
     </>

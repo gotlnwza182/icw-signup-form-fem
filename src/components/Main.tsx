@@ -1,26 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TextInput from "./TextInput";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
-
-// // Specify all properties: name, family, style
-// icon({ name: "user", family: "classic", style: "solid" });
-// icon({ name: "user", family: "classic", style: "regular" });
-// icon({ name: "twitter", family: "classic", style: "brands" });
-
-// // 'classic' is the default family, you can leave that off
-// icon({ name: "user", style: "solid" });
-// icon({ name: "user", style: "regular" });
-// icon({ name: "twitter", style: "brands" });
-
-// // 'solid' is the default style, you can leave that off
-// icon({ name: "user" });
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCoffee,
-  faCircleExclamation,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {};
 
@@ -58,7 +40,6 @@ export default function Main({}: Props) {
 
   function onChangeHandler(event: any) {
     const { name, value } = event.target;
-    // console.log(input);
     if (name === "fname") {
       setErrorFName("");
       setErrorFNameColor(false);
@@ -83,7 +64,6 @@ export default function Main({}: Props) {
 
   function submitHandler(event: any) {
     event.preventDefault();
-    const name: string[] = ["fname", "lname", "email", "password"];
 
     const { fname, lname, email, password } = input;
 
