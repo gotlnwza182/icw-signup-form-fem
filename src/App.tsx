@@ -18,7 +18,11 @@ export default function App({}: Props) {
               Frontend Mentor
             </a>
             . Coded by{" "}
-            <a href="#" className="text-[#5E54A4] underline">
+            <a
+              href="https://github.com/gotlnwza182/icw-signup-form-fem"
+              target="_blank"
+              className="text-[#5E54A4] underline"
+            >
               Denpong Khetpong
             </a>
             .
